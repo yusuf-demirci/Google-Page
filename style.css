@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    height: 100%;
+}
+body {
+    min-height: 100% ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem 1rem 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+nav, .footer-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav a, .footer-links a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+.right a, .left a, footer p {
+    margin: 10px;
+    color: #707070;
+}
+.right img {
+    opacity: 0.5;
+}
+.right img:hover {
+    opacity: 1;
+}
+.right button {
+    background-color: #4285F4;
+    color: #FFF;
+    font-weight: 700;
+    margin: 5px;
+    padding: 8px 12px;
+}
+.right button:hover {
+    box-shadow: .5px .5px #4285F4;
+}
+li {
+    display: inline-block;
+    vertical-align: middle;
+}
+main {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.logo {
+    width: 18rem;
+}
+.search {
+    width: 550px;
+    border: 1px solid #D3DEDC;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 25px;
+}
+.search:hover {
+    box-shadow: 3px 3px 5px #d3d3d3;
+}
+input {
+    width: 85%;
+    border-style: none;
+}
+input:focus {
+    outline: none;
+}
+.microphone {
+    width: 1rem;
+}
+.magnify {
+    width: 2rem;
+}
+button {
+    padding: 10px 18px;
+    border-style: none;
+    margin: 10px 5px 5px;
+    border-radius: 4px;
+    color: #707070;
+}
+button:hover, .microphone:hover {
+    cursor: pointer;
+}
+.buttons button {
+    height: 38px;
+    width: 142px;
+}
+
+.buttons button:hover {
+    color: #000;
+    border: 1px solid #D3DEDC;
+    box-shadow: 2px 2px 3px #D3DEDC;
+}
+footer {
+    background-color: #F2F2F2;
+    margin: 0 -1rem;
+    padding: 0.3rem 1rem 0.5rem;
+}
+.footer-links {
+    padding: 0.5rem 0;
+}
+hr {
+    border-style: none;
+    border-top: 1px solid #D3DEDC;
+}
+
+@media (max-width: 600px) {
+    .search {
+        width: 400px;
+    }
+}
+@media (max-width: 440px) {
+    .search {
+        width: 350px;
+    }
+    .logo {
+        width: 14rem;
+    }
+    .right a, .left a, footer p {
+        margin: 10px 5px;
+        
+    }
+}
